@@ -26,7 +26,7 @@ class MyServiceServicer(my_service_pb2_grpc.MyServiceServicer):
         try:
             conn = psycopg2.connect(database="postgres",
                                     user="postgres",
-                                    password="",
+                                    password="postgres",
                                     host="localhost",
                                     port=5432)
             cursor = conn.cursor()
